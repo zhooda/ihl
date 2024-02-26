@@ -1,0 +1,4 @@
+(executable
+ (public_name ihl)
+ (name main)
+ (libraries ihl))
