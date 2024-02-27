@@ -37,9 +37,19 @@ plain keywords:
 ```
 tool WikipediaLookup {
     with query
-    do   Look up information in wikipedia
+    do   Look up information using wikipedia
 }
 
+OR
+
+tool WikipediaLookup with Query {
+    Look up information using wikipedia
+}
+
+OR
+
+tool WikipediaLookup with Query:
+    Look up information using wikipedia
 ```
 
 `@`-prefixed keywords:
@@ -49,7 +59,6 @@ tool WikipediaLookup {
     @with location
     @do  Look up information about the weather
 }
-
 ```
 
 embedded tool?
@@ -62,7 +71,6 @@ embedded tool?
     @do Add two numbers together 
     @python first + second
 }
-
 ```
 
 
@@ -163,3 +171,5 @@ OR
 Other thoughts:
 
 - Maybe svelte-inspired format would work, include language code (py/js/go/...) and template in the same file
+- Maybe SQL CTE-style syntax
+    - `WITH [TOOLS|VARIABLES|PARSERS] DO [PROMPTS|TEMPLATES]` ???
