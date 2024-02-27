@@ -5,11 +5,11 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github zhooda/ihl))
 
-(authors "Author Name")
+(authors "Zeeshan Hooda")
 
-(maintainers "Maintainer Name")
+(maintainers "Zeeshan Hooda")
 
 (license LICENSE)
 
@@ -17,10 +17,10 @@
 
 (package
  (name ihl)
- (synopsis "A short synopsis")
- (description "A longer description")
+ (synopsis "A DSL for working with Large Language Models")
+ (description "IHL (I Hate LLMs) is a DSL for those who need to use LLMs but find them frustratingly annoying to work with.")
  (depends ocaml dune)
  (tags
-  (topics "to describe" your project)))
+  (topics llm ai ml agent "prompt engineering")))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project

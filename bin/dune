@@ -1,4 +1,5 @@
 (executable
  (public_name ihl)
  (name main)
- (libraries ihl))
+ (libraries ihl core)
+ (preprocess (pps ppx_jane)))
