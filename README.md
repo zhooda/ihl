@@ -30,6 +30,26 @@ For now it will target LangChain as a backend, since that's what I'm working wit
 
 Very early language samples, the goal is to nail down primitives and avoid re-inventing the same thing as everyone else
 
+### Primitives?
+
+Top level vars? special vars?
+
+```
+@sys -> System:
+@user -> User:
+```
+
+Apparently we have enums now??
+
+```
+@sys
+  @provider.openai -> System: @@
+  @provider.anthropic ->
+    <instructions>
+    @@
+    </instructions>
+```
+
 ### Tool
 
 plain keywords:
